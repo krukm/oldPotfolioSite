@@ -1,23 +1,22 @@
-<!doctype html>
-
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Space+Mono:400,700" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" type="text/css" rel="stylesheet">
+  <title>MattyK</title>
 </head>
 <body>
-  <nav class="navbar">
-    <a class="active" href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <h1>Matthew Kruk</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
-  <div class="pic_collection">
-    <div class="image"><img src="http://via.placeholder.com/400x300" alt="Lorem ipsum dolor sit amet"/></div>
-    <div class="image"><img src="http://via.placeholder.com/350x150" alt="Lorem ipsum dolor sit amet"/></div>
-    <div class="image"><img src="http://via.placeholder.com/400x200" alt="Lorem ipsum dolor sit amet"/></div>
-  </div>
+  <ng-view></ng-view>
+
+  <script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>
+  <script src="module.js"></script>
+  <script src="config.js"></script>
+  <script src="nav.js"></script>
+  <script src="main.js"></script>
+  <script src="about.js"></script>
+  <script src="contact.js"></script>
 </body>
+</html>
